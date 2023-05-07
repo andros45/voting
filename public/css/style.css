@@ -1,0 +1,8 @@
+.voting-container,
+.scoreboard-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}

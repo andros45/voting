@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultat</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    {{>partial/main-nav}}
+
+    <h2>Resultat:</h2>
+    <div class="voting-container">
+        {{#voting}}
+        <div>
+            <h3>{{name}}</h3>
+            <img src="image/{{imgRef}}" width="150" height="150" />
+            <p>Antal röster: {{score}}</p>
+        </div>
+        {{/voting}}
+    </div>
+</body>
+</html>
